@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ArcadeHub — Gaming Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">ArcadeHub</h1>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Play. Compete. Win.</h2>
+      <p>Free browser games hosted on the cloud. Play now — no install required.</p>
+      <a class="btn" href="game/index.html" target="_blank" rel="noopener">Play: Block Breaker</a>
+    </section>
+
+    <section id="games" class="games-grid">
+      <article class="game-card">
+        <h3>Block Breaker</h3>
+        <p>Classic breakout-style game. Click to play in a new tab.</p>
+        <a class="btn small" href="game/index.html" target="_blank" rel="noopener">Play</a>
+      </article>
+
+      <article class="game-card coming-soon">
+        <h3>Space Runner (coming soon)</h3>
+        <p>More games will be added soon.</p>
+        <button class="btn small disabled" disabled>Coming Soon</button>
+      </article>
+    </section>
+
+    <section id="about" class="panel">
+      <h2>About ArcadeHub</h2>
+      <p>ArcadeHub is a small demo gaming portal built for hosting browser games on GitHub Pages or cloud platforms like Replit/Netlify.</p>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2>Contact</h2>
+      <p>Instructor / Team submissions: include the GitHub repo URL and the public game link.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> ArcadeHub — Demo portal</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
