@@ -1,0 +1,29 @@
+:root{
+  --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --muted:#9aa6b2;
+  --glass: rgba(255,255,255,0.03);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:linear-gradient(180deg,var(--bg),#071023); color:#e6eef6;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.site-header{background:var(--glass);backdrop-filter:blur(6px);padding:12px 0;position:sticky;top:0;z-index:10}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:20px;color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+.hero{padding:48px 12px;text-align:center}
+.hero h2{font-size:36px;margin:0 0 8px}
+.hero p{color:var(--muted);margin:0 0 18px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),#3ee0a3);color:#022; padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.small{padding:8px 12px;font-size:14px}
+.btn.disabled{opacity:0.5;cursor:default}
+.games-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+.game-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.coming-soon{opacity:0.9}
+.panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:18px;border-radius:12px;margin-top:18px}
+.site-footer{padding:18px 0;color:var(--muted);text-align:center;margin-top:36px}
+@media (max-width:520px){
+  .hero h2{font-size:26px}
+}
