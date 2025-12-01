@@ -1,0 +1,9 @@
+gaming-portal/
+├─ index.html
+├─ styles.css
+├─ script.js
+├─ game/
+│  ├─ index.html
+│  ├─ game.js
+│  └─ README.txt
+└─ README.md
